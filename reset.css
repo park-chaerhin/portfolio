@@ -1,5 +1,5 @@
 /*css reset*/
-body,div,ul,li,a,header,h1,nav,h2,address,dl,dt,dd,h3,select,option,table,caption,thead,tr,th,tbody,td,form,fieldset,legend,label,input,button,span {
+body,div,ul,li,a,header,h1,nav,h2,address,dl,dt,dd,h3,select,option,table,caption,thead,tr,th,tbody,td,form,fieldset,legend,label,input,button,p,span {
   margin: 0;
   padding: 0;
 }

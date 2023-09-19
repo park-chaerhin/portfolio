@@ -3,7 +3,7 @@
 }
 
 /***     header     ***/
-header { /* 화면가운데 위치 */
+header {
     width: 100%;
     height: 100px;
     position: fixed;
@@ -11,8 +11,7 @@ header { /* 화면가운데 위치 */
     display: flex;
     justify-content: center;
 }
-header div { /* 양끝배치 */
-    /* background-color: bisque; */
+header div {
     width: 70%;
     height: 100px;
     display: flex;
@@ -20,7 +19,13 @@ header div { /* 양끝배치 */
     align-items: center;
 }
 header div .logo h1 a {
-    color: #000;
+    color: #c6c6c6;
+    font-weight: lighter;
+}
+header div .logo h1 a:hover {
+    color: #fff;
+    font-weight: lighter;
+    text-decoration: underline;
 }
 
 /***     gnb     ***/
@@ -31,14 +36,28 @@ header div nav ul {
     display: flex;
     justify-content: space-around;
 }
+header div nav ul li a {
+    color: #c6c6c6;
+}
+header div nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
 
 /***     header scroll active     ***/
 header.active {
     background-color: #fff;
 }
-header.active {
-    color: #303030;
+header.active div .logo h1 a,
+header.active div nav ul li a {
+    color: #1e1e1e;
 }
+header.active div .logo h1 a:hover,
+header.active div nav ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
 
 /***     main     ***/
 main {
@@ -48,9 +67,74 @@ main {
     /* justify-content: center; */
     align-items: center;
 }
+
+main .banner {
+    width: 100%;
+    height: 85vh;
+    background: url(banner.jpg);
+    background-size: contain;
+}
+main .banner div {
+    margin-top: 130px;
+    text-align: center;
+}
+main .banner div p {
+    color: #fff;
+}
+main .banner div p:first-child {
+    font-size: 4rem;
+    font-weight: bold;
+}
+main .banner div p:nth-child(2) {
+    font-size: 3rem;
+}
+main .banner div hr {
+    width: 3.25rem;
+    border-top: 0.2rem solid white;
+    margin: 1.5rem auto;
+}
+main .banner div p:last-child {
+    font-size: 1.3rem;
+}
+main .banner div button {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
+
 main article {
     width: 70%;
+    padding: 3rem 0;
 }
+main .profile h2{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+main .profile .profile_list {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .profile .profile_list>div {
+    background-color: beige;
+    width: 33.333%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+main .profile .profile_list>div span{
+    font-size: 3.3rem;
+}
+main .profile .profile_list>div div{
+    font-size: 1.3rem;
+}
+
+
+/* skills project contact */
+
 
 /***     footer     ***/
 footer {

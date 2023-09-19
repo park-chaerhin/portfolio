@@ -6,8 +6,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap|Material+Icons" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 
@@ -34,18 +36,67 @@
 
     <main id="main">
         <article class="banner">
-            <p>박채린
-            <p>프론트엔드 포트폴리오</p>
-            <hr>
-            <p>(한줄소개)</p>
-            <p>자세히보기(다음 article)</p>
+            <div>
+                <p>박 채 린</p>
+                <p>프론트엔드 포트폴리오</p>
+                <hr>
+                <p>
+                    안녕하세요. <br>
+                    프론트엔드 개발자입니다.
+                </p>
+                <button type="button">
+                    <span>자세히 보기</span>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down_circle
+                    </span>
+                </button>
+            </div>
         </article>
         <article class="profile">
             <h2>Profile</h2>
-            <div>
-                <img src="" alt="name, birth, address, phone, email, career">
-                <h6 class="title"></h6>
-                <p>박채린, 93.10.03, 경기도 용인시, 010-3191-1009, cofls8929@naver.com, </p>
+            <div class="profile_list">
+                <div>
+                    <span class="material-symbols-outlined">badge</span>
+                    <div>
+                        <p>NAME</p>
+                        <p>박채린</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">celebration</span>
+                    <div>
+                        <p>BIRTH</p>
+                        <p>93.10.03</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">home</span>
+                    <div>
+                        <p>ADDRESS</p>
+                        <p>경기도 용인시</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">call</span>
+                    <div>
+                        <p>PHONE</p>
+                        <p>010-3191-1009</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">mail</span>
+                    <div>
+                        <p>EMAIL</p>
+                        <p>cofls8929@naver.com</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">work</span>
+                    <div>
+                        <p>CAREER</p>
+                        <p>1년차</p>
+                    </div>
+                </div>           
             </div>
         </article>
         <article class="skills">
