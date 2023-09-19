@@ -1,27 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <script></script>
+    <title>프론트엔드 박채린 - 포트폴리오</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div>
-            <div>
-                <a href="#">Portfolio</a>
+            <div class="logo">
+                <h1><a href="#">Portfolio</a></h1>
             </div>
-            <div>
+            <nav>
                 <ul>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Skills</a></li>
-                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Project</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
-    <main>main</main>
-    <footer>footer</footer>
+
+    <main id="main">
+        <article class="banner">
+            <p>
+                박채린 / 프론트엔드 포트폴리오 / - / (한줄소개) / 자세히보기(다음 article)
+            </p>
+        </article>
+        <article class="profile">
+            <h2>Profile</h2>
+            <div>
+                <img src="" alt="name, birth, address, phone, email, career">
+                <h6 class="title"></h6>
+                <p>박채린, 93.10.03, 경기도 용인시, 010-3191-1009, cofls8929@naver.com, </p>
+            </div>
+        </article>
+        <article class="skills">
+            <h2>Skills</h2>
+            <div></div>
+        </article>
+        <article class="project">
+            <h2>Project</h2>
+            <!-- 
+                슬라이드로 구현 : cgv, hollys, toilet(웹앱이니까 QR 썸네일), diary 
+             -->
+        </article>
+        <article class="contact">
+            <h2>Contact</h2>
+            <!--
+                메일, 카카오톡
+            -->
+        </article>
+    </main>
+    <footer id="footer">
+        <!-- github, © 2023. Park Chae Rhin. All rights reserved. -->
+    </footer>
 </body>
 </html>
