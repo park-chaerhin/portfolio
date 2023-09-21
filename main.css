@@ -68,6 +68,7 @@ main {
     align-items: center;
 }
 
+/***     main - banner     ***/
 main .banner {
     width: 100%;
     height: 85vh;
@@ -119,6 +120,8 @@ main article h2{
     font-weight: bold;
     text-align: center;
 }
+
+/***     main - profile     ***/
 main .profile .profile_list {
     width: 100%;
     padding: 4rem 0;
@@ -143,8 +146,54 @@ main .profile .profile_list>div div p:first-child {
     font-weight: bold
 }
 
-
-/* skills project contact */
+/***     main - skills     ***/
+/***     main - project     ***/
+/***     main - contact     ***/
+main .contact>div {
+    /* background-color: pink; */
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+main .contact>div h2 {
+    padding: 0 0 4rem 0;
+}
+main .contact>div .email_form {
+    padding: 4rem 0;
+    width: 60%;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 0 0.5px lightgrey;
+}
+main .contact>div .email_form div {
+    background-color: pink;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+main .contact>div .email_form div label {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+main .contact>div .email_form div input {
+    background-color: lightgrey;
+    border: lightgrey;
+    height: 1.8rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+main .contact>div .email_form div textarea {
+    background-color: lightgrey;
+    border: lightgrey;
+    width: 15rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
 
 
 /***     footer     ***/
