@@ -146,8 +146,29 @@ main .profile .profile_list>div div p:first-child {
     font-weight: bold
 }
 
-/***     main - skills     ***/
 /***     main - project     ***/
+main .project>div>div {
+    padding: 4rem 0;
+}
+main .project>div>div .slider {
+    width: 100%;
+    height: 20rem;
+    border: 1px solid #000;
+}
+main .project>div>div .slider .list_wrap ul {
+    display: flex;
+}
+main .project>div>div .slider .list_wrap ul li {
+    border: 1px solid palevioletred;
+    width: 30rem;
+    height: 100%;
+}
+main .project>div>div .slider .list_wrap ul li a img {
+    width: 100%;
+    
+}
+
+
 /***     main - contact     ***/
 main .contact>div {
     /* background-color: pink; */
@@ -168,12 +189,19 @@ main .contact>div .email_form {
     box-shadow: 1rem 1rem 0 0.5px lightgrey;
 }
 main .contact>div .email_form div {
-    background-color: pink;
     height: max-content;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+main .contact>div .email_form div div {
+    width: 50%;
+    display: flex;
+    margin-bottom: 1.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 main .contact>div .email_form div label {
     font-size: 1.3rem;
@@ -183,7 +211,7 @@ main .contact>div .email_form div input {
     background-color: lightgrey;
     border: lightgrey;
     height: 1.8rem;
-    width: 10rem;
+    width: 15rem;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
@@ -193,6 +221,10 @@ main .contact>div .email_form div textarea {
     width: 15rem;
     border-radius: 0.5rem;
     font-size: 1rem;
+}
+main .contact .email_form div button {
+    font-size: 2rem;
+    padding: 0.5rem;
 }
 
 

@@ -26,7 +26,6 @@
             <nav>
                 <ul>
                     <li><a href="#">Profile</a></li>
-                    <li><a href="#">Skills</a></li>
                     <li><a href="#">Project</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -101,18 +100,38 @@
                 </div>
             </div>
         </article>
-        <article class="skills">
-            <div>
-                <h2>Skills</h2>
-                <div></div>
-            </div>
-        </article>
         <article class="project">
             <div>
                 <h2>Project</h2>
                 <!-- 
                     슬라이드로 구현 : cgv, hollys, toilet(웹앱이니까 QR 썸네일), diary 
+                1. 박스 : 슬라이드 노출
+                2. 박스 : 슬라이드박스 4개
+                3. 왼/오 화살표 버튼  
                 -->
+                <div>
+                    <div class="slider">
+                        <div class="list_wrap">
+                            <ul>
+                                <li>
+                                    <a href="https://projectteamtwo.github.io/">
+                                        <img src="Hollys main.png" alt="cgv 메인이미지">
+                                        <p>HOLLYS HOMEPAGE RENEWAL</p>
+                                    </a>
+                                </li>
+                                <li>HOLLYS</li>
+                                <li>toilet</li>
+                                <li>diary</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pager">
+                        <ul>
+                            <li><button> 왼쪽</button></li>
+                            <li><button> 오른쪽</button></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </article>
         <article class="contact">
@@ -120,18 +139,22 @@
                 <h2>Contact</h2>
                 <div class="email_form">
                     <div>
-                        <label for="name">이름</label>
-                        <input type="text" id="name" name="name">
+                        <div>
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="number">연락처</label>
+                            <input type="text" id="number" name="number" required>
+                        </div>
+                        <div>
+                            <label for="content">내용</label>
+                            <textarea type="text" id="content" name="content" cols="5" rows="10" wrap="hard" required>
+                        </div>
+                        <div> <!--버튼 사라짐?!-->
+                            <button type="submit">보내기</button>
+                        </div>
                     </div>
-                    <div>
-                        <label for="number">연락처</label>
-                        <input type="text" id="number" name="number">
-                    </div>
-                    <div>
-                        <label for="content">내용</label>
-                        <textarea type="text" id="content" name="content" rows="5" value>
-                    </div>
-                    <button type="submit">보내기</button>
                 </div>
             </div>
         </article>
@@ -139,6 +162,7 @@
 
     <footer id="footer">
         <div>
+            <p><a href="https://github.com/park-chaerhin"><img src="GitHub-Logo.png" alt="github"></a></p>
             <p>© 2023. Park Chae Rhin. All rights reserved.</p>
         </div>
         <!-- github,  -->
