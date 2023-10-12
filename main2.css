@@ -1,3 +1,4 @@
+/** skip **/
 #skip a{
     display: block;
     position: fixed;
@@ -16,3 +17,11 @@
 #skip a:active {
     top: 0;
 }
+
+
+/** header **/
+/** main - portfolio **/
+/** main - about **/
+/** main - skills **/
+/** main - project **/
+/** footer **/
